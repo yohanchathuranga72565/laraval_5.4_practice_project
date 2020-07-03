@@ -22,3 +22,6 @@ Route::get('/services','PagesController@services');
 //     return "<h1>hello world</h1>";
 // });
 Route::resource('posts','PostsController');
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');
